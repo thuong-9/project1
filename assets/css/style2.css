@@ -1,0 +1,157 @@
+
+  .web-container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+nav{
+   display: flex;
+   padding: 15.64px 0px 17.65px 0px;
+   align-items: center;
+}
+header{
+    background-color: #0E2C51CC;
+    backdrop-filter: blur(35%);
+}
+.nav-logo{
+    margin-right: 44.64px;
+    padding-left: 39.52px;
+
+}
+.nav-menu{
+    
+    display: flex;
+    color: white    ;
+    transition: all 0.5s ease;
+}
+
+.nav-close{
+    display: none;
+}
+.nav-menu li{
+    position: relative;
+    padding: 0 32px;
+}
+.nav-menu li::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px;
+    height: 18px;
+    right: 0px;
+    opacity: 15%;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-menu li:last-child::after{
+    display: none;
+}
+
+
+.nav-menu a{
+    white-space: nowrap;
+}
+.nav-link{
+    color: black;
+    
+    background-color: #ffffff;
+    margin-left: 288px;
+    border: 1px;
+    font-family: 'oxygen';
+    margin-right: 30px;
+    
+    text-align: center;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+.nav-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0;
+    
+}
+.nav-toggle li{
+    background-color: #ffffff;
+    height: 2px;
+    margin: 4px 0;
+    width: 19.2px;
+}
+@media screen and (max-width:1400px){
+    .web-container{
+        margin: 0 2rem;
+    }
+    .nav-link{
+        display: none;
+    }
+}
+@media screen and ( max-width:950px) {
+    .web-container{
+        margin: 0 1rem;
+    }
+
+    .nav-logo{
+        padding-left: 0;
+    }
+   
+    .nav-menu{
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        text-align: left;
+        transition: all 0.5s ease-in-out;
+        background-color: #3e5674;
+        height: 100%;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+    .nav-close{
+        position: absolute !important;
+        right: 0px;
+        top: 10px;
+        cursor: pointer;
+        width: 40px;
+        padding: 0 !important;
+    }
+
+    .nav-close img{
+        width: 40px;
+        display: block;
+        filter: invert(99%) sepia(43%) saturate(0%) hue-rotate(120deg) brightness(115%) contrast(101%);
+    }
+
+    body.show-menu .nav-menu{
+        right: 0;
+    }
+
+    body.show-menu .nav-close{
+        display: block;
+    }
+    .nav-menu li{
+        padding: 15px 40px;
+    }
+    
+    .nav-link{
+        display: flex;
+        margin: 0 auto;
+       font-size: 3vw;
+    }
+    
+    
+  
+    .nav-toggle{
+        display: flex;
+        opacity: 1;
+        margin-left: auto;
+    }
+  
+} 
+
+
+

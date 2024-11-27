@@ -1,0 +1,91 @@
+/* Resetting default margin and padding for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Removing the default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset font sizes and line heights */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+/* Resetting form element styles */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Ensuring images scale responsively */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensuring that elements like figure and footer don't have default margins */
+figure,
+footer,
+header,
+section,
+article,
+nav,
+aside,
+address,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Allow form elements to take up the full width available */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+}
+
+/* Make sure the body doesn't have any default padding or margins */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove the default appearance of buttons in some browsers */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
